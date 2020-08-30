@@ -83,3 +83,20 @@ private static final int MAXIMUM_NUMBER_OF_BOOKS_STUDENT_CAN_ISSUE = 5;
         System.out.println( result);
     }
 }
+/**
+     * This method will issue the books to the Student
+     *
+     * @param bookIssuingIndex The index where the book is issueing.
+     * @param bookName         The name of the book which is issuing.
+     */
+    public void issueBooksToStudents(int bookIssuingIndex, String bookName) {
+        namesOfTheBooksIssuedByTheStudent[bookIssuingIndex].setNameOfTheBook(bookName);
+    }
+
+     *
+     * @param bookIssuingIndex The index where the book is issueing.
+     * @param bookName         The name of the book which is issuing.
+     */
+    public void issueBooksToStudents(int bookIssuingIndex, String bookName) {
+        namesOfTheBooksIssuedByStudent[bookIssuingIndex].setNameOfTheBook(bookName);
+    }
