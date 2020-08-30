@@ -10,20 +10,20 @@ import java.util.Objects;
 
 public class Book {
 
-    private String nameOfTheBook;
-    private String nameOfTheAuthorOfTheBook;
-    private String thirteenDigitISBNNumberOfTheBook;
+    private String nameOfBook;
+    private String nameOfAuthorOfTheBook;
+    private String thirteenDigitsISBNNumberOfTheBook;
 
     // Parameterized Constructor
-    public Book(String nameOfTheBook, String nameOfTheAuthorOfTheBook, String thirteenDigitISBNNumberOfTheBook) {
-        this.nameOfTheBook = nameOfTheBook;
-        this.nameOfTheAuthorOfTheBook = nameOfTheAuthorOfTheBook;
-        this.thirteenDigitISBNNumberOfTheBook = thirteenDigitISBNNumberOfTheBook;
+    public Book(String nameOfBook, String nameOfAuthorOfTheBook, String thirteenDigitISBNNumberOfTheBook) {
+        this.nameOfBook = nameOfBook;
+        this.nameOfAuthorOfTheBook = nameOfAuthorOfTheBook;
+        this.thirteenDigitsISBNNumberOfTheBook = thirteenDigistISBNNumberOfTheBook;
     }
 
     // Non-Parameterized Constructor
     public Book() {
-        this.nameOfTheBook = null;
-        this.nameOfTheAuthorOfTheBook = null;
-        this.thirteenDigitISBNNumberOfTheBook = null;
+        this.nameOfBook = null;
+        this.nameOfAuthorOfTheBook = null;
+        this.thirteenDigitsISBNNumberOfTheBook = null;
     }
