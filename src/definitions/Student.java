@@ -24,9 +24,40 @@ private static final int MAXIMUM_NUMBER_OF_BOOKS_STUDENT_CAN_ISSUE = 5;
     // Non-Parameterized Constructor
     public Student() {
         this.studentName = "";
-        this. studentIniversityRollNumber= 0L;
+        this. studentUniversityRollNumber= 0L;
         this.numberOfBooksIssuedByStudent = 0;
         this.booksNameIssuedByTheStudent = new Book[MAXIMUM_NUMBER_OF_BOOKS_STUDENT_CAN_ISSUE];
         for (int initializingBook = 0; initializingBook < MAXIMUM_NUMBER_OF_BOOKS_STUDENT_CAN_ISSUE; initializingBook++) {
             this.booksNameIssuedByTheStudent[initializingBook] = new Book();
         }
+    public String getStudentName() {
+        return studentName;
+    }
+
+    public void setstudentName(String studentName) {
+        this.studentName = studentName;
+    }
+
+    public long getStudentUniversityRollNumber() {
+        return studentUniversityRollNumber;
+    }
+
+    public void setStudentUniversityRollNumber(long studentUniversityRollNumber) {
+        this.studentUniversityRollNumber = studentUniversityRollNumber;
+    }
+
+    public int getNumberOfBooksIssuedByStudent() {
+        return numberOfBooksIssuedByStudent;
+    }
+
+    public void setNumberOfBooksIssuedByStudent(int numberOfBooksIssuedByStudent) {
+        this.numberOfBooksIssuedByStudent = numberOfBooksIssuedByStudent;
+    }
+
+    public Book[] getBooksNameIssuedByTheStudent() {
+        return BooksNameIssuedByTheStudent;
+    }
+
+    public void setBooksNameIssuedByTheStudent(Book[] booksNameIssuedByTheStudent) {
+        this.booksNameIssuedByTheStudent = booksNameIssuedByTheStudent;
+    }
