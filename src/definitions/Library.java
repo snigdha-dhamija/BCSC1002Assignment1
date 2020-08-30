@@ -30,3 +30,16 @@ private static final int MAXIMUM_NUMBER_OF_BOOKS_IN_LIBRARY = 5;
     public void setBooksThatAreRecentlyAvailable(Book[] booksThatAreRecentlyAvailable) {
         this.booksThatAreRecentlyAvailable = booksThatAreRecentlyAvailable;
     }
+   
+    public String toString() {
+        return Arrays.toString(booksThatAreRecentlyAvailable);
+    }
+    public equals()
+   {
+    if(Library.getBooksThatAreRecentlyAvailable() equals.(Array.getBooksThatAreRecentlyAvailable()));
+     System.out.println("Both are equal");
+    }
+    public hashCode() {
+        if(Arrays.hashCode(getBooksThatAreCurrentlyAvailable())==Library.hashCode(getBooksThatAreRecentlyAvailable())); 
+        System.out.println("Equal");
+    }
