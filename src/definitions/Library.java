@@ -46,7 +46,8 @@ private static final int MAXIMUM_NUMBER_OF_BOOKS_IN_LIBRARY = 5;
 /**
      * This method will set the Information of books available in Library.
      */
-    public void setBooksInLibrary() {
+    public void setBooksInLibrary()
+     {
         booksThatAreRecentlyAvailable[0].setNameOfBook("Engineering Physics");
         booksThatAreRecentlyAvailable[0].setNameOfAuthorOfTheBook("S.k Sharma");
         booksThatAreRecentlyAvailable[0].setThirteenDigitsISBNNumberOfTheBook("5678996134689");
@@ -63,3 +64,16 @@ private static final int MAXIMUM_NUMBER_OF_BOOKS_IN_LIBRARY = 5;
         booksThatAreRecentlyAvailable[4].setNameOfAuthorOfTheBook("Dr. R. Nageswara Rao");
         booksThatAreRecentlyAvailable[4].setThirteenDigitsISBNNumberOfTheBook("9351199258111");
     }
+    /**
+     * This method will show the Information of books available in Library.
+     */
+    public void showAvailableBooks() {
+        System.out.println("----------------------------------------------------------------------------------");
+        System.out.printf("|%-36s %-21s %-21s|\n", "Name of the book", "Name of the Author", "13-Digits ISBN Number");
+        System.out.println("----------------------------------------------------------------------------------");
+        for (int libraryIndex = 0; libraryIndex < MAXIMUM_NUMBER_OF_BOOKS_IN_LIBRARY; libraryIndex++) {
+            System.out.printf("|%-36s %-21s %-21s|\n", booksThatAreRecentlyAvailable[libraryIndex].getNameOfBook(), booksThatAreRecentlyAvailable[libraryIndex].getNameOfAuthorOfTheBook(), booksThatAreRecentyAvailable[libraryIndex].getThirteenDigitsISBNNumberOfTheBook());
+        }
+        System.out.println("----------------------------------------------------------------------------------");
+    }
+}
