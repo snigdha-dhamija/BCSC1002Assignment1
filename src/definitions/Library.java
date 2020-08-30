@@ -23,3 +23,10 @@ private static final int MAXIMUM_NUMBER_OF_BOOKS_IN_LIBRARY = 5;
             this.booksThatAreRecentlyAvailable[libraryIndex] = new Book();
         }
     }
+    public Book[] getBooksThatAreRecentlyAvailable() {
+        return booksThatAreRecentlyAvailable;
+    }
+
+    public void setBooksThatAreRecentlyAvailable(Book[] booksThatAreRecentlyAvailable) {
+        this.booksThatAreRecentlyAvailable = booksThatAreRecentlyAvailable;
+    }
