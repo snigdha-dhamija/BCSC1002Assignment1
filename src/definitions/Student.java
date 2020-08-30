@@ -125,3 +125,20 @@ private static final int MAXIMUM_NUMBER_OF_BOOKS_STUDENT_CAN_ISSUE = 5;
         }
         return returnSuccessful;
     }
+   /**
+     * This method will show all the books issued by the Student.
+     */
+    public void showIssuedBooksByStudent() {
+        if (getNumberOfBooksIssuedByStudent() == 0) {
+            System.out.println("Sorry, you haven't issued any book yet.");
+        } 
+         else
+          {
+            System.out.println("These are the books issued by you: ");
+            for (int issuedBookIndex = 0; issuedBookIndex < MAXIMUM_NUMBER_OF_BOOKS_STUDENT_CAN_ISSUE; issuedBookIndex++) {
+                if (booksNameIssuedByTheStudent[issuedBookIndex].getBookName() != null) {
+                    System.out.print(booksNameIssuedByStudent[issuedBookIndex].getBookName() + (issuedBookIndex < getNumberOfBooksIssuedByStudent() - 1 ? ", " : ".\n"));
+                }
+            }
+        }
+    }
