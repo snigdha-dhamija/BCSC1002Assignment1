@@ -100,3 +100,28 @@ private static final int MAXIMUM_NUMBER_OF_BOOKS_STUDENT_CAN_ISSUE = 5;
     public void issueBooksToStudents(int bookIssuingIndex, String bookName) {
         namesOfTheBooksIssuedByStudent[bookIssuingIndex].setNameOfTheBook(bookName);
     }
+
+    /**
+     * This method will return the Book which is issued by the student.
+     *
+     * @param bookName The name of the book which is used to be returned.
+     * @return It will return Boolean value, if return will be successful then it will return true else false.
+     */
+    public boolean returnBook(String bookName) {
+        boolean returnSuccessful = false;
+        int returnBookIndex = 0;
+        for (int tempIndex = 0; tempIndex < MAXIMUM_BOOKS_STUDENT_CAN_ISSUE; tempIndex++) {
+            if (bookName.equals(namesOfTheBooksIssuedByTheStudent[tempIndex].getNameOfTheBook())) {
+                returnSuccessful = true;
+                returnBookIndex = tempIndex;
+                setNumberOfBooksIssuedByStudent(getNumberOfBooksIssuedByStudent() - 1);
+                break;
+            }
+        }
+        if (returnSuccessful) {
+            namesOfTheBooksIssuedByStudent[returnBookIndex].setNameOfBook(null);
+        } else {
+            System.out.println("Please Enter the correct book name.");
+        }
+        return returnSuccessful;
+    }
