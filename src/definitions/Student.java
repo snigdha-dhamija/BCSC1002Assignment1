@@ -61,3 +61,25 @@ private static final int MAXIMUM_NUMBER_OF_BOOKS_STUDENT_CAN_ISSUE = 5;
     public void setBooksNameIssuedByTheStudent(Book[] booksNameIssuedByTheStudent) {
         this.booksNameIssuedByTheStudent = booksNameIssuedByTheStudent;
     }
+    public String toString() {
+        return "Name of the Student: " + getStudentName() + ", " +
+                "University Roll Number: " + getStudentUniversityRollNumber() + ", " +
+                "Number of Books Issued: " + getNumberOfBooksIssuedByStudent() + ", " +
+                "Names of Books Issued: " + Arrays.toString(BooksNameIssuedByTheStudent()) + ".";
+
+    }
+    public equals()
+    {
+    if(Student.getStudentUniversityRollNumber() == student.getStudentUniversityRollNumber() &&
+                Student.getNumberOfBooksIssuedByStudent() == student.getNumberOfBooksIssuedByStudent() &&
+                Books.equals(getStudentName(), student.StudentName()) &&
+                Arrays.equals(BooksNameIssuedByTheStudent(), student.getNamesOfTheBooksIssuedByTheStudent());
+    }
+    public hashCode()
+    {
+        if( Book.hashCode(getStudentName()), getStudentUniversityRollNumber(), getNumberOfBooksIssuedByStudent());
+        {
+         result = 31 * result + Arrays.hashCode(getNamesOfTheBooksIssuedByStudent());
+        System.out.println( result);
+    }
+}
