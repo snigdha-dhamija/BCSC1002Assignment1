@@ -1,7 +1,7 @@
 /*  Created by IntelliJ IDEA.
- *  User: Divyansh Bhardwaj (dbc2201)
- *  Date: 21/08/20
- *  Time: 3:49 PM
+ *  User: Snigdha Dhamija
+ *  Date: 30/08/20
+ *  Time: 5:50 PM
  *  File Name : Book.java
  * */
 package definitions; 
@@ -27,3 +27,28 @@ public class Book {
         this.nameOfAuthorOfTheBook = null;
         this.thirteenDigitsISBNNumberOfTheBook = null;
     }
+    public String getNameOfBook() {
+        return nameOfBook;
+    }
+
+    public void setNameOfBook(String nameOfBook) {
+        this.nameOfBook = nameOfBook;
+    }
+
+    public String getNameOfAuthorOfTheBook() {
+        return nameOfAuthorOfTheBook;
+    }
+
+    public void setNameOfAuthorOfTheBook(String nameOfAuthorOfTheBook) {
+        this.nameOfAuthorOfTheBook = nameOfAuthorOfTheBook;
+    }
+
+    public String getThirteenDigitsISBNNumberOfTheBook() {
+        return thirteenDigitISBNNumberOfTheBook;
+    }
+
+    public void setThirteenDigitsISBNNumberOfTheBook(String thirteenDigitISBNNumberOfTheBook) {
+        this.thirteenDigitISBNNumberOfTheBook = thirteenDigitISBNNumberOfTheBook;
+    }
+
+
