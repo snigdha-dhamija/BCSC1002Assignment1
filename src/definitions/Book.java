@@ -50,5 +50,25 @@ public class Book {
     public void setThirteenDigitsISBNNumberOfTheBook(String thirteenDigitISBNNumberOfTheBook) {
         this.thirteenDigitISBNNumberOfTheBook = thirteenDigitISBNNumberOfTheBook;
     }
+    public String toString() 
+    {
+        return "Book Name: " + getNameOfBook() + ", " +
+                "Author Name: " + getNameOfAuthorOfTheBook() + ", " +
+                "13-Digit ISBN Number: " + getThirteenDigitsISBNNumberOfTheBook() + ".";
+    }
 
+    public equal() 
+    {
+      if(getNameOfBook().equals(book.getNameOfBook()) &&
+      getNameOfAuthorOfTheBook().equals(book.getNameOfAuthorOfTheBook()) &&
+      getThirteenDigistISBNNumberOfTheBook==(book.getThirteenDigitsISBNNumberOfTheBook());
+      System.out.println("Both are of same class");
+    }
+   public hashcode()
+   {
+     if(getThirteenDigistISBNNumberOfTheBook.hashCode()==book.getThirteenDigitsISBNNumberOfTheBook.hashCode());
+      System.out.println("Equal");
+    }
+
+    
 
