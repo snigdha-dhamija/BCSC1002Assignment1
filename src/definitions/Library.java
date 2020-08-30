@@ -43,3 +43,23 @@ private static final int MAXIMUM_NUMBER_OF_BOOKS_IN_LIBRARY = 5;
         if(Arrays.hashCode(getBooksThatAreCurrentlyAvailable())==Library.hashCode(getBooksThatAreRecentlyAvailable())); 
         System.out.println("Equal");
     }
+/**
+     * This method will set the Information of books available in Library.
+     */
+    public void setBooksInLibrary() {
+        booksThatAreRecentlyAvailable[0].setNameOfBook("Engineering Physics");
+        booksThatAreRecentlyAvailable[0].setNameOfAuthorOfTheBook("S.k Sharma");
+        booksThatAreRecentlyAvailable[0].setThirteenDigitsISBNNumberOfTheBook("5678996134689");
+        booksThatAreRecentlyAvailable[1].setNameOfBook("Software Engineering");
+        booksThatAreRecentlyAvailable[1].setNameOfAuthorOfTheBook("K.K Gupta");
+        booksThatAreRecentlyAvailable[1].setThirteenDigitsISBNNumberOfTheBook("9353062012000");
+        booksThatAreRecentlyAvailable[2].setNameOfBook("Engineering Chemistry");
+        booksThatAreRecentlyAvailable[2].setNameOfAuthorOfTheBook("S.P. Singh");
+        booksThatAreRecentlyAvailable[2].setThirteenDigitsISBNNumberOfTheBook("9789332582705");
+        booksThatAreRecentlyAvailable[3].setNameOfBook("Essentials of English");
+        booksThatAreRecentlyAvailable[3].setNameOfAuthorOfTheBook("Preeti Das");
+        booksThatAreRecentlyAvailable[3].setThirteenDigitsISBNNumberOfTheBook("9789388028028");
+        booksThatAreRecentlyAvailable[4].setNameOfBook("Core Python Programming");
+        booksThatAreRecentlyAvailable[4].setNameOfAuthorOfTheBook("Dr. R. Nageswara Rao");
+        booksThatAreRecentlyAvailable[4].setThirteenDigitsISBNNumberOfTheBook("9351199258111");
+    }
